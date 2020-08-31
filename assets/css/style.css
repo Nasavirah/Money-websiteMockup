@@ -534,6 +534,47 @@ table{
   letter-spacing: 0.2px;
   color: #5c617d;
 }
+.bg-red{
+  padding: 5px;
+  background: red;
+  width: fit-content;
+}
+.bg-red p{
+  margin: 0;
+  color: white;
+}
+ul.list li{
+  list-style-type: circle;
+  color: orange;
+}
+ul.list p{
+  font-size: 16px;
+  line-height: 25px;
+  color: #4a4a4a;
+  padding-bottom: .5rem;
+}
+hr {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+.finals h5{
+  font-size: 22px;
+  font-weight: 600;
+  color: #232323;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+.termsNEw{
+  font-size: 18px;
+  font-weight: 600;
+  color: #232323;
+  line-height: 30px;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
 @media (max-width: 991.97px) {
 .row-rev{
   flex-direction: column-reverse;
@@ -542,5 +583,8 @@ table{
 @media (max-width: 765px) {
   #about {
     padding: 20px 0px 15px 0px;
+  }
+  ul.list {
+    padding: 10px;
   }
 }
