@@ -101,19 +101,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h5>refer & earn</h5>
+                    <h5 class="pt-3" style="color: #0052a6c9;">refer & earn</h5>
                     <div class="row">
-                        <div class="col-lg-4 col-md-12 col-sm-12 vertical-line">
-                            <p class="text-center">Your Referal Link to Share</p>
+                        <div class="col-lg-4 col-md-12 col-sm-12 justify-content-center align-self-center">
+                            <p class="text-center">Your Referal Link to Share:</p>
                             <div class="input-group mb-3" style="padding: 0 10%;">
-                                <input type="text" class="form-control" placeholder="Your Referal Link"
-                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <input id="text-to-copy" type="text" class="form-control"
+                                    placeholder="Your Referal Link" aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2">
                                 <div class="input-group-append bg-btn">
-                                    <span class="input-group-text" id="basic-addon2">COPY</span>
+                                    <span class="input-group-text" id="copy-text">COPY</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12 col-sm-12 vertical-line">
+                        <div class="col-lg-4 col-md-12 col-sm-12 justify-content-center align-self-center vertical-line">
                             <p class="text-center">Invite via</p>
                             <div class="d-flex mt-3 justify-content-center">
                                 <img src="assets/images/whatapp.png" class="rounded group-3 mr-3" alt="image">
@@ -124,28 +125,34 @@
                                 <img src="assets/images/fb.png" class="rounded group-3" alt="image">
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="col-lg-4 col-md-12 col-sm-12 justify-content-center align-self-center">
                             <div class="p-4">
-                                <div class="bg-white mb-3">
-                                    <h4>Invite By SMS</h4>
-                                    <div class="input-group mb-3 btn-new1">
-                                        <input type="text" class="form-control" placeholder="Mobile Number"
-                                            aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                        <div class="input-group-append bg-btn">
-                                            <span class="input-group-text" id="basic-addon2">INVITE</span>
+                                <form name="form1" action="#">
+                                    <div class="bg-white mb-3">
+                                        <h4>Invite By SMS</h4>
+                                        <div class="input-group mb-3 btn-new1">
+                                            <input type="text" class="form-control" placeholder="Mobile Number"
+                                                aria-label="Recipient's username" name="text11"
+                                                aria-describedby="basic-addon2">
+                                            <div class="input-group-append bg-btn">
+                                                <span class="input-group-text" id="basic-addon2"
+                                                    onclick="phonenumber(document.form1.text11)">INVITE</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="bg-white my-3">
-                                    <h4>Invite By SMS</h4>
-                                    <div class="input-group mb-3 btn-new1">
-                                        <input type="email" class="form-control" placeholder="Email ID"
-                                            aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                        <div class="input-group-append bg-btn">
-                                            <span class="input-group-text" id="basic-addon2">INVITE</span>
+                                    <div class="bg-white my-3">
+                                        <h4>Invite By Email</h4>
+                                        <div class="input-group mb-3 btn-new1">
+                                            <input type="text" class="form-control" placeholder="Email ID"
+                                                aria-label="Recipient's username" name="text1"
+                                                aria-describedby="basic-addon1">
+                                            <div class="input-group-append bg-btn">
+                                                <span class="input-group-text" id="basic-addon1"
+                                                    onclick="ValidateEmail(document.form1.text1)">INVITE</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -169,6 +176,8 @@
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+    
+    <script src="assets/js/validation.js"> </script>
 
     <!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
 </body>
